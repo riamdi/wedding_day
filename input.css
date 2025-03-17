@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer{
+    @font-face {
+        font-family: "Noto Serif Traditional Chinese";
+        src: url(fonts/NotoSerifTC-Regular.ttf);
+    }
+    @font-face {
+        font-family: "Bounded";
+        src: url(fonts/ofont.ru_Bounded.ttf);
+    }
+    @font-face {
+        font-family: "Bonche";
+        src: url(fonts/ofont.ru_Bonche.ttf);
+    }
+}
