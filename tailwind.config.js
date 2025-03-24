@@ -7,8 +7,9 @@ module.exports = {
         bg_color: '#252525'
       },
       fontFamily: {
-        noto: ["Noto Serif Traditional Chinese", "serif"],
-        Bonche: ["	Bonche"],
+        'noto': ["Noto Serif Traditional Chinese", "serif"],
+        'Bonche' : ["Bonche"],
+        'mak' : ["Mak"]
       },
     },
   },
