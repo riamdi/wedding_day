@@ -1,12 +1,26 @@
-function startSlideshow(slideshowClass) {
-    let indexValue = 0; 
-    const images = document.querySelectorAll('.' + slideshowClass);
-    function SlideShow() {
-        images[indexValue].classList.add("hidden");
-        indexValue = (indexValue + 1) % images.length;
-        images[indexValue].classList.remove("hidden");
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+        loop: true,
+        items: 1,
+        autoplay: true,
+        autoplayTimeout: 4000,  
+        animateIn: 'animate__fadeIn',
+        animateOut: 'animate__fadeOut',
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const targetDate = new Date("2025-07-25T16:00:00");
+
+    function updateCountdown() {
+        const timeLeft = countdown(targetDate);
+
+        document.getElementById("days").textContent = String(timeLeft.days).padStart(2, "0");
+        document.getElementById("hours").textContent = String(timeLeft.hours).padStart(2, "0");
+        document.getElementById("minutes").textContent = String(timeLeft.minutes).padStart(2, "0");
+        document.getElementById("seconds").textContent = String(timeLeft.seconds).padStart(2, "0");
     }
-    setInterval(SlideShow, 4000);
-}
-startSlideshow('slideshow1');
-startSlideshow('slideshow2');
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+});
