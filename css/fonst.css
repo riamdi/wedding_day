@@ -14,3 +14,7 @@
     font-family: "Mak";
     src: url(../fonts/mak.otf) format("woff2");
 }
+@font-face {
+    font-family: "Cezanne";
+    src: url(../fonts/p22-cezanne-pro.otf) format("woff2");
+}
