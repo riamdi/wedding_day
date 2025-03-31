@@ -1,9 +1,10 @@
-$(document).ready(function(){
+
+document.addEventListener('DOMContentLoaded', function() {
     $(".owl-carousel").owlCarousel({
         loop: true,
         items: 1,
         autoplay: true,
-        autoplayTimeout: 4000,  
+        autoplayTimeout: 4000,
         animateIn: 'animate__fadeIn',
         animateOut: 'animate__fadeOut',
     });
@@ -37,10 +38,3 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(updateCountdown, 1000);
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-    $('.js-select2').select2({
-        minimumResultsForSearch: Infinity 
-    });
-  });
-
- 
