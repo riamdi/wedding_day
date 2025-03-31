@@ -6,11 +6,13 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fonst.css">
     <link rel="shortcut icon" href="img/wedding-logo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/katuzoku/popModal@latest/popModal.min.css"> -->
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"></noscript>
+
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" as="style" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="node_modules/select2/dist/css/select2.min.css">
+
     <title>Invitation</title>
 </head>
 <body>
@@ -73,15 +75,15 @@
             <div class="owl-carousel mt-[52px] md:mt-[102px]">
                 <img class="slideshow1  w-[320px] h-[427px] mx-auto md:h-[696px] md:w-[559px] object-cover" src="img/girl_1.JPG">
                 <img class="slideshow1 w-[320px] h-[427px] mx-auto md:h-[696px] md:w-[559px] object-cover " src="img/girl_2.JPG">
-                <img class="slideshow1 w-[320px] h-[427px] mx-auto md:h-[696px] md:w-[559px] object-cover " src="img/girl_3.PNG">
-                <img class="slideshow1 w-[320px] h-[427px] mx-auto md:h-[696px] md:w-[559px] object-cover " src="img/girl_4.PNG">
+                <img class="slideshow1 w-[320px] h-[427px] mx-auto md:h-[696px] md:w-[559px] object-cover " src="img/girl_3.jpg">
+                <img class="slideshow1 w-[320px] h-[427px] mx-auto md:h-[696px] md:w-[559px] object-cover " src="img/girl_4.jpg">
                 <img class="slideshow1 w-[320px] h-[427px] mx-auto md:h-[696px] md:w-[559px] object-cover " src="img/girl_5.JPG">
             </div>
         </div>
         <div class="w-[320px] h-[427px] md:h-[696px] md:w-[559px] mx-auto">
             <div class="owl-carousel mt-[27px] md:mt-[76px]">
                 <img class="slideshow2 w-[320px] h-[427px] mx-auto md:h-[696px] md:w-[559px] object-cover" src="img/boy_1.JPG">
-                <img class="slideshow2 w-[320px] h-[427px] mx-auto md:h-[696px] md:w-[559px] object-cover " src="img/boy_2.PNG">
+                <img class="slideshow2 w-[320px] h-[427px] mx-auto md:h-[696px] md:w-[559px] object-cover " src="img/boy_2.jpg">
                 <img class="slideshow2 w-[320px] h-[427px] mx-auto md:h-[696px] md:w-[559px] object-cover " src="img/boy_3.JPG">
                 <img class="slideshow2 w-[320px] h-[427px] mx-auto md:h-[696px] md:w-[559px] object-cover " src="img/boy_4.JPG">
                 <img class="slideshow2 w-[320px] h-[427px] mx-auto md:h-[696px] md:w-[559px] object-cover " src="img/boy_5.JPG">
@@ -165,6 +167,7 @@
                     <option value="" class="font-cezanne uppercase text-black">Не ем рыбу и мясо</option>
                 </select>
             </div>
+            
             <div class="mt-[25px] md:mt-9">
                 <div class="text-[15px] md:text-[24px] font-noto uppercase tracking-widest mb-3 md:mb-2">Какой алкоголь вы предпочитаете?</div>
                 <ul class="pl-1">
@@ -184,10 +187,10 @@
        
         
     </section>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/gh/katuzoku/popModal@latest/popModal.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/countdown/2.6.0/countdown.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" defer></script>
+    <script src="node_modules/countdown/countdown.js"></script>
+    <script src="node_modules/select2/dist/js/select2.min.js"></script>
     <script src="script.js"></script>
     
 </body>
