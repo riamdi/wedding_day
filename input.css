@@ -2,5 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+    [data-aos="soft-zoom-in"] {
+        transform: scale(0.9); 
+        opacity: 0;          
+        transition: transform 0.5s ease-in, opacity 0.5s ease-in;
+    }
+    
+    [data-aos="soft-zoom-in"].aos-animate {
+        transform: scale(1) !important;;
+        opacity: 1 !important;; 
+    }
+
+  }
 
 

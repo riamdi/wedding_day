@@ -4,8 +4,8 @@ module.exports = {
     "./index.html",
     "./css/**/*.css",
     "./js/**/*.js",
-    "./img/**/*.{jpg,png,svg}"
-    // "./node_modules/**/*.css"
+    "./img/**/*.{jpg,png,svg}",
+    "./node_modules/**/*.css"
   ],
   theme: {
     extend: {

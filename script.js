@@ -1,3 +1,6 @@
+AOS.init({
+    once: true,
+  });
 
 document.addEventListener('DOMContentLoaded', function() {
     $(".owl-carousel").owlCarousel({

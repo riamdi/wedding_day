@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
     "countdown": "^2.6.0",
     "select2": "^4.1.0-rc.0"
   }
