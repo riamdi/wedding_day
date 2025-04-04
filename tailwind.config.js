@@ -22,7 +22,7 @@ module.exports = {
       },
       boxShadow: {
         '3xl': '0 0 7px 7px rgba(0, 0, 0, 0.08)',
-      }
+      },
     },
   },
   plugins: [],
