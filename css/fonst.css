@@ -11,10 +11,11 @@
     src: url(../fonts/ofont.ru_Bonche.ttf);
 }
 @font-face {
-    font-family: "Mak";
-    src: url(../fonts/MAK.otf) format("woff2");
-}
-@font-face {
-    font-family: "Cezanne";
-    src: url(../fonts/p22-cezanne-pro.otf) format("woff2");
+    font-family: "MAK";
+    src: url("../fonts/mak.otf") format("opentype"),
+         url("../fonts/mak.woff2") format("woff2"),
+         url("../fonts/mak.woff") format("woff");
+    font-weight: normal; /* или 400 */
+    font-style: normal;
+    font-display: swap; /* для оптимизации загрузки */
 }

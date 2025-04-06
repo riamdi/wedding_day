@@ -17,8 +17,7 @@ module.exports = {
       fontFamily: {
         'noto': ["Noto Serif Traditional Chinese", "serif"],
         'Bonche' : ["Bonche"],
-        'mak' : ["Mak"],
-        'cezanne' : ['Cezanne']
+        'mak' : ["MAK"]
       },
       boxShadow: {
         '3xl': '0 0 7px 7px rgba(0, 0, 0, 0.08)',
