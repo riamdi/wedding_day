@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,8 +40,8 @@
         <h1 data-aos="soft-zoom-in" data-aos-easing="ease-in" data-aos-delay="100" data-aos-duration="300" data-scroll-speed="0.3" class="text-2xl md:text-[40px] font-noto uppercase tracking-widest leading-normal mb-10 md:mb-12">Дорогие друзья <br>и родные</h1>
         <p data-aos="soft-zoom-in" data-aos-easing="ease-in" data-aos-delay="100" data-aos-duration="300" class="text-[15.5px] w-[330px] mx-auto md:w-[692px] md:text-[24px] font-noto uppercase tracking-widest leading-normal mb-8 md:mb-14">Один день в этом году станет особенным для нашей семьи. И мы хотим провести его в кругу самых близких и дорогих людей!</p>
         <p data-aos="soft-zoom-in" data-aos-easing="ease-in" data-aos-delay="100" data-aos-duration="300" class="text-[15.5px] w-[300px] mx-auto md:w-[672px] md:text-[24px] font-noto uppercase tracking-widest leading-normal mb-[30px] md:mb-12">С большим удовольствием приглашаем вас разделить с нами праздник!</p>
-        <p data-aos="soft-zoom-in" data-aos-easing="ease-in" data-aos-delay="100" data-aos-duration="300" class="text-xl md:text-4xl font-noto uppercase tracking-widest leading-normal mb-[28px] md:mb-11"><span class="font-mak">25</span> июля <span class="font-mak">2025</span> года</p>
-        <p data-aos="soft-zoom-in" data-aos-easing="ease-in" data-aos-delay="100" data-aos-duration="300" data-scroll-speed="0.3" class="text-[15.5px] md:text-[24px] font-noto uppercase tracking-widest leading-normal mb-9">Сбор гостей в <span class="font-mak">16:00</span></p>
+        <p data-aos="soft-zoom-in" data-aos-easing="ease-in" data-aos-delay="100" data-aos-duration="300" class="text-xl md:text-4xl font-noto uppercase tracking-widest leading-normal mb-[28px] md:mb-11"><span class="font-mak text-[22px] md:text-[38px]">25</span> июля <span class="font-mak text-[22px] md:text-[38px]">2025</span> года</p>
+        <p data-aos="soft-zoom-in" data-aos-easing="ease-in" data-aos-delay="100" data-aos-duration="300" data-scroll-speed="0.3" class="text-[15px] md:text-[24px] font-noto uppercase tracking-widest leading-normal mb-9">Сбор гостей в <span class="font-mak text-[17px] md:text-[26px]">16:00</span></p>
     </section>
     <section class="bg-bg_color h-[250px] sm:h-[700px] md:h-[500px] relative">
         <img class="px-4 absolute left-0 right-0 mx-auto object-cover transform -translate-y-1/2" src="img/invitation_img.avif" alt="wedding">
@@ -139,13 +139,19 @@
         <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="400" class="md:w-[680px] w-[320px] mx-auto mt-[47px] md:mt-[75px]">
             <div class="input-container">
                 <div class="text-[15px] md:text-[24px] font-noto uppercase tracking-widest leading-normal mb-3 md:mb-4">Имя и фамилия:</div>
-                  <div class="relative">
-                    <input id="nameInput" class="pb-2 text-[15px]  md:text-[22px] font-noto uppercase tracking-widest leading-normal border-b border-b-[#000] w-full outline-none " type="text" placeholder="Введите текст">
-                  <div id="error_tooltip" class="hidden opacity-0 transition-opacity duration-1000 ease-in-out  animate__animated shadow-3xl absolute top-full left-0 mt-1 font-noto bg-white text-red_btn text-sm px-3 py-2 rounded-[2px] z-50">
-                    <div class="absolute -top-1 left-4 w-3 h-3 bg-white transform rotate-45"></div>
-                    Обязательное поле
-                  </div>
-                  </div>
+                <div class="relative">
+                    <input 
+                        id="nameInput" 
+                        class="pb-2 text-[15px] md:text-[22px] font-noto tracking-widest leading-normal border-b border-b-[#000] w-full outline-none text-gray-500 placeholder-gray-300 focus:text-gray-500" 
+                        type="text" 
+                        placeholder="ВВЕДИТЕ ТЕКСТ"
+                        style="color: #6b7280 !important;" 
+                    >
+                    <div id="error_tooltip" class="hidden opacity-0 transition-opacity duration-1000 ease-in-out animate__animated shadow-3xl absolute top-full left-0 mt-1 font-noto bg-white text-red_btn text-sm px-3 py-2 rounded-[2px] z-50">
+                        <div class="absolute -top-1 left-4 w-3 h-3 bg-white transform rotate-45"></div>
+                        Обязательное поле
+                    </div>
+                </div>
             </div>
             <div class="mt-[25px] md:mt-10">
                 <div class="js-select2 text-[15px] md:text-[24px] font-noto uppercase tracking-widest leading-normal mb-2">Ваше присутствие:</div>
@@ -157,43 +163,43 @@
             </div>
             <div class="mt-[25px] md:mt-9">
                 <div class="text-[15px] md:text-[24px] font-noto uppercase tracking-widest mb-3">Если с вами будут дети, впишите их имена и возраст</div>
-                <input class="pb-2 text-[15px] md:text-[22px] font-noto uppercase tracking-widest leading-normal border-b border-b-[#000] w-full outline-none" type="text" placeholder="Введите текст">
+                <input class="pb-2 text-[15px] md:text-[22px] font-noto tracking-widest leading-normal border-b border-b-[#000] w-full outline-none" style="color: #6b7280 !important;" type="text" placeholder="ВВЕДИТЕ ТЕКСТ">
             </div>
             <div class="mt-[23px] md:mt-9">
                 <div class="text-[15px] md:text-[24px] font-noto uppercase tracking-widest mb-3 md:mb-2">Потребуется ли вам трансфер?</div>
                 <ul>
                     <li class="mb-[8px] md:mb-[1px]">
                         <label class="flex items-center cursor-pointer">
-                            <input type="radio" name="transfer" class="appearance-none absolute">
-                            <span class="w-5 h-5 border-2 border-black rounded-full relative mr-3">
-                                <span class="absolute inset-0 m-auto w-2 h-2 rounded-full opacity-0 transition-opacity duration-200"></span>
+                            <input type="radio" name="transfer" class="peer hidden">
+                            <span class="w-5 h-5 border-2 border-gray-500 rounded-full relative mr-3 flex items-center justify-center transition-colors duration-200 peer-checked:border-black">
+                                <span class="w-2 h-2 rounded-full bg-black opacity-0 peer-checked:opacity-100 transition-opacity duration-200"></span>
                             </span>
                             <span class="text-[15px] md:text-[24px] font-noto uppercase">нет</span>
                         </label>
                     </li>
                     <li class="mb-[8px] md:mb-[1px]">
                         <label class="flex items-center cursor-pointer">
-                            <input type="radio" name="transfer" class="appearance-none absolute">
-                            <span class="w-5 h-5 border-2 border-black rounded-full relative mr-3">
-                                <span class="absolute inset-0 m-auto w-2 h-2 rounded-full opacity-0 transition-opacity duration-200"></span>
+                            <input type="radio" name="transfer" class="peer hidden">
+                            <span class="w-5 h-5 border-2 border-gray-500 rounded-full relative mr-3 flex items-center justify-center transition-colors duration-200 peer-checked:border-black">
+                                <span class="w-2 h-2 rounded-full bg-black opacity-0 peer-checked:opacity-100 transition-opacity duration-200"></span>
                             </span>
                             <span class="text-[15px] md:text-[24px] font-noto uppercase">только до торжества</span>
                         </label>
                     </li>
                     <li class="mb-[8px] md:mb-[1px]">
                         <label class="flex items-center cursor-pointer">
-                            <input type="radio" name="transfer" class="appearance-none absolute">
-                            <span class="w-5 h-5 border-2 border-black rounded-full relative mr-3">
-                                <span class="absolute inset-0 m-auto w-2 h-2 rounded-full opacity-0 transition-opacity duration-200"></span>
+                            <input type="radio" name="transfer" class="peer hidden">
+                            <span class="w-5 h-5 border-2 border-gray-500 rounded-full relative mr-3 flex items-center justify-center transition-colors duration-200 peer-checked:border-black">
+                                <span class="w-2 h-2 rounded-full bg-black opacity-0 peer-checked:opacity-100 transition-opacity duration-200"></span>
                             </span>
                             <span class="text-[15px] md:text-[24px] font-noto uppercase">только после торжества</span>
                         </label>
                     </li>
                     <li class="mb-[8px] md:mb-[1px]">
                         <label class="flex items-center cursor-pointer">
-                            <input type="radio" name="transfer" class="appearance-none absolute">
-                            <span class="w-5 h-5 border-2 border-black rounded-full relative mr-3">
-                                <span class="absolute inset-0 m-auto w-2 h-2 rounded-full opacity-0 transition-opacity duration-200"></span>
+                            <input type="radio" name="transfer" class="peer hidden">
+                            <span class="w-5 h-5 border-2 border-gray-500 rounded-full relative mr-3 flex items-center justify-center transition-colors duration-200 peer-checked:border-black">
+                                <span class="w-2 h-2 rounded-full bg-black opacity-0 peer-checked:opacity-100 transition-opacity duration-200"></span>
                             </span>
                             <span class="text-[15px] md:text-[24px] font-noto uppercase">до и после торжества</span>
                         </label>
