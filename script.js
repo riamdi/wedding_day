@@ -107,16 +107,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
 document.querySelectorAll('input[type="radio"]').forEach(radio => {
     radio.addEventListener('change', function() {
-        // Находим все внутренние круги
         const allDots = document.querySelectorAll('span.w-2.h-2.rounded-full');
-        
-        // Сначала скрываем все круги
         allDots.forEach(dot => {
             dot.classList.remove('opacity-100', 'bg-black');
             dot.classList.add('opacity-0');
         });
-        
-        // Показываем только выбранный
         if (this.checked) {
             const dot = this.parentElement.querySelector('span.w-2.h-2.rounded-full');
             dot.classList.add('opacity-100', 'bg-black');

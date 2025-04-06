@@ -1590,6 +1590,16 @@ video {
   color: rgb(209 213 219 / var(--tw-placeholder-opacity, 1));
 }
 
+.placeholder-gray-400::-moz-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-placeholder-opacity, 1));
+}
+
+.placeholder-gray-400::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-placeholder-opacity, 1));
+}
+
 .accent-black {
   accent-color: #000000;
 }
@@ -2142,5 +2152,3 @@ video {
     font-size: 80px;
   }
 }
-
-
